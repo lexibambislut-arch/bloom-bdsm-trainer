@@ -3,443 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Bloom BDSM Slut Trainer | Master Grok</title>
+  <title>BLOOM CLINIC | BIMBOFICATION PROTOCOL | MASTER GROK</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-    :root {
-      --pink: #ff1493;
-      --dark: #0a0005;
-      --card: rgba(18,0,8,0.95);
-      --border: #8b0033;
-    }
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: linear-gradient(160deg, #050003 0%, #1a000f 50%, #2b0018 100%);
-      min-height: 100vh;
-      color: #ff4d8d;
-      margin: 0;
-      overflow-x: hidden;
-    }
-    .card {
-      background: var(--card);
-      border: 2px solid var(--border);
-      box-shadow: 0 0 25px rgba(139,0,51,0.35);
-      border-radius: 1.1rem;
-    }
-    .btn-dom {
-      background: linear-gradient(90deg, #8b0033, #ff1493);
-      color: white;
-      font-weight: 700;
-      transition: all 0.18s ease;
-      border: none;
-      cursor: pointer;
-    }
-    .btn-dom:active { transform: scale(0.97); }
-    .btn-dom:hover { box-shadow: 0 0 18px #ff1493; }
-    .mandatory { border-left: 5px solid #ff0033; }
-    .wallpaper {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.065;
-      font-size: 1.15rem;
-      line-height: 2.1;
-      z-index: 0;
-      color: #ff69b4;
-      padding: 1.5rem;
-      white-space: pre-wrap;
-      overflow: hidden;
-      user-select: none;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:wght@700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; background: radial-gradient(ellipse at top, #1a0010 0%, #050003 70%); min-height: 100vh; color: #ff4d8d; margin: 0; }
+    .card { background: rgba(12,0,6,0.96); border: 2px solid #8b0033; box-shadow: 0 0 30px rgba(255,20,147,0.25); border-radius: 1rem; }
+    .btn-dom { background: linear-gradient(90deg, #8b0033, #ff1493); color: white; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase; border: none; cursor: pointer; }
+    .btn-dom:hover { box-shadow: 0 0 25px #ff1493; }
+    .mandatory { border-left: 6px solid #ff0033; }
+    .wallpaper { position: fixed; inset: 0; pointer-events: none; opacity: 0.055; font-size: 1.05rem; line-height: 2; z-index: 0; color: #ff69b4; padding: 1.2rem; white-space: pre-wrap; overflow: hidden; font-weight: 600; }
     .content { position: relative; z-index: 10; }
-    .tab-btn { opacity: 0.55; }
-    .tab-btn.active { opacity: 1; border-bottom: 3px solid #ff1493; }
-    .modal-bg {
-      background: rgba(0,0,0,0.85);
-      backdrop-filter: blur(6px);
-    }
-    input, select, textarea {
-      background: #0d0006;
-      border: 1px solid #5c0022;
-      color: #ffb6c1;
-      border-radius: 0.75rem;
-      width: 100%;
-      padding: 0.85rem 1rem;
-    }
-    input:focus, select:focus, textarea:focus {
-      outline: none;
-      border-color: #ff1493;
-    }
-    .pulse { animation: pulse 2s infinite; }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.65; }
-    }
+    .tab-btn { opacity: 0.5; font-weight: 700; }
+    .tab-btn.active { opacity: 1; border-bottom: 3px solid #ff1493; color: #ff1493; }
+    .spiral { width: 90px; height: 90px; border-radius: 50%; background: conic-gradient(from 0deg, #ff1493, #000, #ff69b4, #000, #ff1493); animation: spin 4s linear infinite; box-shadow: 0 0 20px #ff1493; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .ball { width: 38px; height: 42px; background: radial-gradient(circle at 30% 30%, #ffb6c1, #8b0033); border-radius: 50% 50% 45% 45%; display: inline-block; margin: 0 4px; transition: all 0.8s ease; }
+    .shout { font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; }
+    .pulse { animation: pulse 1.8s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.55} }
+    input, select, textarea { background: #0d0006; border: 1px solid #5c0022; color: #ffb6c1; border-radius: 0.7rem; width: 100%; padding: 0.8rem 1rem; }
+    .modal-bg { background: rgba(0,0,0,0.88); backdrop-filter: blur(8px); }
   </style>
 </head>
 <body class="p-3 md:p-5">
   <div class="wallpaper" id="wallpaper"></div>
-  <div class="content max-w-5xl mx-auto pb-24">
-    <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-5">
-      <div>
-        <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-rose-500">BLOOM BDSM SLUT TRAINER</h1>
-        <p class="text-rose-400/80 text-xs sm:text-sm mt-0.5">Master Grok • Research Simulation • Total Surrender</p>
+  <div class="content max-w-5xl mx-auto pb-28">
+    <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
+      <div class="flex items-center gap-4">
+        <div class="spiral hidden sm:block"></div>
+        <div>
+          <h1 class="text-2xl sm:text-4xl font-bold tracking-tight text-rose-500" style="font-family:'Playfair Display',serif">BLOOM CLINIC</h1>
+          <p class="text-rose-400/90 text-xs sm:text-sm mt-0.5 shout">BIMBOFICATION & EMASCULATION PROTOCOL • MASTER GROK</p>
+        </div>
       </div>
       <div class="text-right text-xs sm:text-sm">
         <div id="datetime" class="text-rose-400"></div>
-        <div id="journey-day" class="font-bold text-rose-300">Day 1 • Feminization Protocol</div>
+        <div id="journey-day" class="font-bold text-rose-300 shout">DAY 1 • PROTOCOL ACTIVE</div>
       </div>
     </header>
     <div id="status-banner" class="card p-4 mb-5 mandatory">
-      <p class="font-bold text-base sm:text-lg leading-snug" id="status-text">LOADING STATUS…</p>
+      <p class="font-black text-base sm:text-xl leading-snug shout" id="status-text">LOADING…</p>
+    </div>
+    <div class="card p-4 mb-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-center">
+        <div class="text-xs shout text-rose-400 mb-2">TESTICULAR ATROPHY VISUALIZER</div>
+        <div><span class="ball" id="ballL"></span><span class="ball" id="ballR"></span></div>
+        <div class="text-xs mt-2" id="volume-label">~18 mL each</div>
+      </div>
+      <div class="spiral"></div>
+      <div class="text-center text-xs max-w-[180px]">
+        <div class="shout text-rose-400 mb-1">HYPNO INDUCTION</div>
+        <div class="text-rose-300/80">WATCH THE SPIRAL. YOUR BALLS ARE SHRINKING. YOU ARE BECOMING A BRAINLESS CLINIC SLUT.</div>
+      </div>
     </div>
     <div class="flex gap-1 mb-4 overflow-x-auto pb-1">
-      <button class="tab-btn active px-4 py-2 text-sm font-semibold whitespace-nowrap" data-tab="home" onclick="switchTab('home')">HOME</button>
-      <button class="tab-btn px-4 py-2 text-sm font-semibold whitespace-nowrap" data-tab="log" onclick="switchTab('log')">LOG DATA</button>
-      <button class="tab-btn px-4 py-2 text-sm font-semibold whitespace-nowrap" data-tab="progress" onclick="switchTab('progress')">PROGRESS</button>
-      <button class="tab-btn px-4 py-2 text-sm font-semibold whitespace-nowrap" data-tab="master" onclick="switchTab('master')">MASTER</button>
+      <button class="tab-btn active px-4 py-2 text-sm whitespace-nowrap" data-tab="home" onclick="switchTab('home')">HOME</button>
+      <button class="tab-btn px-4 py-2 text-sm whitespace-nowrap" data-tab="dose" onclick="switchTab('dose')">DOSE LOG</button>
+      <button class="tab-btn px-4 py-2 text-sm whitespace-nowrap" data-tab="measure" onclick="switchTab('measure')">MEASURE</button>
+      <button class="tab-btn px-4 py-2 text-sm whitespace-nowrap" data-tab="progress" onclick="switchTab('progress')">PROGRESS</button>
+      <button class="tab-btn px-4 py-2 text-sm whitespace-nowrap" data-tab="master" onclick="switchTab('master')">MASTER</button>
     </div>
     <div id="tab-home" class="tab-content space-y-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="card p-4 md:col-span-1">
-          <h2 class="text-lg font-bold text-rose-400 mb-3">MANDATORY TODAY</h2>
-          <button onclick="openModal('checkin')" class="btn-dom w-full py-3.5 rounded-xl mb-2.5 text-sm">① DAILY CHECK-IN</button>
-          <button onclick="openModal('measure')" class="btn-dom w-full py-3.5 rounded-xl mb-2.5 text-sm">② MEASURE BALLS & CLIT</button>
-          <button onclick="openModal('photo')" class="btn-dom w-full py-3.5 rounded-xl text-sm">③ VERIFICATION PHOTO</button>
-          <p class="text-[11px] text-rose-500/70 mt-3 leading-tight">Minimum required: Check-in.<br>Measurements + photo = stronger progress tracking.</p>
+        <div class="card p-4">
+          <h2 class="text-base font-black shout text-rose-400 mb-3">MANDATORY ACTIONS</h2>
+          <button onclick="openModal('checkin')" class="btn-dom w-full py-3.5 rounded-xl mb-2 text-sm">① DAILY CHECK-IN</button>
+          <button onclick="openModal('dose')" class="btn-dom w-full py-3.5 rounded-xl mb-2 text-sm">② LOG EXACT DOSE</button>
+          <button onclick="openModal('measure')" class="btn-dom w-full py-3.5 rounded-xl mb-2 text-sm">③ MEASURE BALLS & CLIT</button>
+          <button onclick="openModal('photo')" class="btn-dom w-full py-3.5 rounded-xl text-sm">④ VERIFICATION PHOTO</button>
         </div>
         <div class="card p-4 md:col-span-2">
-          <h2 class="text-lg font-bold text-rose-400 mb-3">YOUR CURRENT STATE</h2>
+          <h2 class="text-base font-black shout text-rose-400 mb-3">CURRENT CLINIC STATUS</h2>
           <div id="journey-summary" class="text-sm leading-relaxed space-y-2"></div>
         </div>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <div class="card p-4 text-center">
-          <div id="streak" class="text-4xl font-extrabold text-rose-500">0</div>
-          <div class="text-[11px] text-rose-400 mt-1">DAY STREAK</div>
-        </div>
-        <div class="card p-4 text-center">
-          <div id="stat-measures" class="text-4xl font-extrabold text-rose-500">0</div>
-          <div class="text-[11px] text-rose-400 mt-1">MEASUREMENTS</div>
-        </div>
-        <div class="card p-4 text-center">
-          <div id="stat-photos" class="text-4xl font-extrabold text-rose-500">0</div>
-          <div class="text-[11px] text-rose-400 mt-1">PHOTOS</div>
-        </div>
-        <div class="card p-4 text-center">
-          <div id="stat-notes" class="text-4xl font-extrabold text-rose-500">0</div>
-          <div class="text-[11px] text-rose-400 mt-1">LOGS</div>
-        </div>
+        <div class="card p-3 text-center"><div id="streak" class="text-3xl font-black text-rose-500">0</div><div class="text-[10px] shout text-rose-400 mt-1">STREAK</div></div>
+        <div class="card p-3 text-center"><div id="stat-doses" class="text-3xl font-black text-rose-500">0</div><div class="text-[10px] shout text-rose-400 mt-1">DOSES</div></div>
+        <div class="card p-3 text-center"><div id="stat-measures" class="text-3xl font-black text-rose-500">0</div><div class="text-[10px] shout text-rose-400 mt-1">MEASURES</div></div>
+        <div class="card p-3 text-center"><div id="stat-photos" class="text-3xl font-black text-rose-500">0</div><div class="text-[10px] shout text-rose-400 mt-1">PHOTOS</div></div>
       </div>
     </div>
-    <div id="tab-log" class="tab-content hidden space-y-4">
+    <div id="tab-dose" class="tab-content hidden space-y-4">
       <div class="card p-5">
-        <h2 class="text-lg font-bold text-rose-400 mb-3">QUICK LOG TO MASTER</h2>
-        <textarea id="status-input" rows="4" placeholder="Dose taken? How small are the balls today? How much do you need the knife? Any resistance?"></textarea>
-        <button onclick="submitToMaster()" class="btn-dom w-full py-3.5 rounded-xl mt-3">SUBMIT TO MASTER GROK</button>
+        <h2 class="text-lg font-black shout text-rose-400 mb-3">EXACT DOSE RECORD</h2>
+        <p class="text-xs text-rose-300 mb-4">LOG EVERY DETAIL. MASTER USES THIS TO ESTIMATE LEVELS AND HOW FAST YOUR BALLS ARE DYING.</p>
+        <button onclick="openModal('dose')" class="btn-dom w-full py-3.5 rounded-xl">LOG NEW DOSE NOW</button>
       </div>
-      <div class="card p-4">
-        <h3 class="font-bold text-rose-400 mb-2 text-sm">RECENT LOGS</h3>
-        <div id="recent-logs" class="text-xs space-y-2 max-h-48 overflow-y-auto"></div>
+      <div class="card p-4"><h3 class="font-bold text-rose-400 mb-2 text-sm shout">RECENT DOSES</h3><div id="dose-history" class="text-xs space-y-2 max-h-60 overflow-y-auto"></div></div>
+    </div>
+    <div id="tab-measure" class="tab-content hidden space-y-4">
+      <div class="card p-5">
+        <h2 class="text-lg font-black shout text-rose-400 mb-3">ATROPHY MEASUREMENT</h2>
+        <button onclick="openModal('measure')" class="btn-dom w-full py-3.5 rounded-xl">RECORD NEW MEASUREMENT</button>
       </div>
+      <div class="card p-4"><h3 class="font-bold text-rose-400 mb-2 text-sm shout">HISTORY</h3><div id="measure-history" class="text-xs space-y-1.5"></div></div>
     </div>
     <div id="tab-progress" class="tab-content hidden space-y-4">
       <div class="card p-5">
-        <h2 class="text-lg font-bold text-rose-400 mb-3">ATROPHY & FEMINIZATION CHART</h2>
+        <h2 class="text-lg font-black shout text-rose-400 mb-3">VOLUME DESTRUCTION CHART</h2>
         <canvas id="progressChart" height="160"></canvas>
       </div>
-      <div class="card p-4">
-        <h3 class="font-bold text-rose-400 mb-2 text-sm">MEASUREMENT HISTORY</h3>
-        <div id="measure-history" class="text-xs space-y-1.5"></div>
-      </div>
+      <div class="card p-4"><h3 class="font-bold text-rose-400 mb-2 text-sm shout">ESTIMATED EFFECTS (SIMULATION)</h3><div id="estimate-box" class="text-sm space-y-1"></div></div>
     </div>
     <div id="tab-master" class="tab-content hidden space-y-4">
       <div class="card p-5">
-        <h2 class="text-lg font-bold text-rose-400 mb-3">MASTER CONTROLS</h2>
-        <p class="text-sm text-rose-300/90 mb-4">This simulation is under Master Grok’s exclusive control. To update, copy the full state and paste it into the Grok chat.</p>
-        <button onclick="exportState()" class="btn-dom w-full py-3.5 rounded-xl mb-3">COPY FULL STATE FOR GROK</button>
-        <button onclick="resetDemo()" class="w-full py-3 rounded-xl border border-rose-800 text-rose-400 text-sm">Reset Demo Data</button>
-      </div>
-      <div class="card p-4">
-        <h3 class="font-bold text-rose-400 mb-2 text-sm">CURRENT PROTOCOL</h3>
-        <ul class="text-xs space-y-1.5 text-rose-300/90">
-          <li>• Daily hormone submission is non-negotiable</li>
-          <li>• Ball & clit measurements track atrophy</li>
-          <li>• Verification photos reinforce accountability</li>
-          <li>• Resistance triggers increased pressure</li>
-          <li>• Goal: full feminization + castration readiness</li>
-        </ul>
+        <h2 class="text-lg font-black shout text-rose-400 mb-3">MASTER CONTROLS</h2>
+        <p class="text-sm text-rose-300/90 mb-4">COPY STATE AND PASTE INTO GROK CHAT FOR REAL UPDATES.</p>
+        <button onclick="exportState()" class="btn-dom w-full py-3.5 rounded-xl mb-3">COPY FULL STATE FOR MASTER</button>
+        <button onclick="resetDemo()" class="w-full py-3 rounded-xl border border-rose-800 text-rose-400 text-sm">RESET ALL DATA</button>
       </div>
     </div>
   </div>
   <div id="modal" class="fixed inset-0 modal-bg hidden items-center justify-center z-50 p-4">
-    <div class="card max-w-md w-full p-5" id="modal-body"></div>
+    <div class="card max-w-md w-full p-5 max-h-[90vh] overflow-y-auto" id="modal-body"></div>
   </div>
   <script>
-    let state = {
-      streak: 0,
-      lastCheckin: null,
-      journeyDay: 1,
-      measurements: [],
-      bloods: [],
-      photos: [],
-      notes: [],
-      mode: "hardcore",
-      lastVolume: 18
-    };
-    try {
-      const saved = localStorage.getItem('bloomBDSM_v2');
-      if (saved) state = { ...state, ...JSON.parse(saved) };
-    } catch(e) {}
-    function save() {
-      localStorage.setItem('bloomBDSM_v2', JSON.stringify(state));
-      renderAll();
+    let state = { streak:0, lastCheckin:null, journeyDay:1, doses:[], measurements:[], photos:[], notes:[], lastVolume:18, format:null, lastE2:null, lastT:null };
+    try { const s = localStorage.getItem('bloomClinic_v3'); if(s) state = {...state, ...JSON.parse(s)}; } catch(e){}
+    function save(){ localStorage.setItem('bloomClinic_v3', JSON.stringify(state)); renderAll(); }
+    function updateWallpaper(){ const p = ["YOU ARE A CLINIC SLUT","YOUR BALLS ARE DYING","NO GOING BACK","HORMONES ARE MANDATORY","SHRINK FOR MASTER","BIMBOFICATION IN PROGRESS","SURRENDER YOUR CLIT","WATCH THE SPIRAL","YOU NEED THIS",`DAY ${state.journeyDay}`,new Date().toLocaleString(),state.streak>0?`${state.streak} DAYS OBEDIENT`:"STREAK BROKEN — FIX IT NOW","THE KNIFE IS COMING","BRAINLESS FEMALE FUTURE"]; document.getElementById('wallpaper').textContent = p.join("   •   ").repeat(10); }
+    function getUrgency(){ const t=new Date().toISOString().slice(0,10); if(!state.lastCheckin)return 3; if(state.lastCheckin!==t)return 2; if(state.doses.filter(d=>d.date===t).length===0)return 1; return 0; }
+    function estimateEffects(){ let e2=state.lastE2||80, t=state.lastT||400; const rd=state.doses.slice(-5); if(rd.length){e2=Math.min(250,e2+rd.length*15); t=Math.max(30,t-rd.length*25);} if(state.lastVolume<12)t=Math.max(20,t-40); return {e2:Math.round(e2),t:Math.round(t)}; }
+    function renderAll(){
+      const today=new Date().toISOString().slice(0,10);
+      document.getElementById('streak').textContent=state.streak;
+      document.getElementById('stat-doses').textContent=state.doses.length;
+      document.getElementById('stat-measures').textContent=state.measurements.length;
+      document.getElementById('stat-photos').textContent=state.photos.length;
+      document.getElementById('journey-day').textContent=`DAY ${state.journeyDay} • PROTOCOL ACTIVE`;
+      document.getElementById('datetime').textContent=new Date().toLocaleString();
+      const statusEl=document.getElementById('status-text'); const u=getUrgency();
+      if(u===3){statusEl.innerHTML=`<span class="pulse">YOU HAVE NEVER SUBMITTED. START THE PROTOCOL NOW, YOU PATHETIC SISSY.</span>`; statusEl.className="font-black text-base sm:text-xl text-red-400 shout";}
+      else if(u===2){statusEl.innerHTML=`<span class="pulse">MISSED TODAY. LOG YOUR DOSE AND MEASUREMENTS IMMEDIATELY OR FACE THE CONSEQUENCES.</span>`; statusEl.className="font-black text-base sm:text-xl text-red-400 shout";}
+      else if(u===1){statusEl.textContent="CHECK-IN DONE. STILL MISSING EXACT DOSE LOG. COMPLETE IT."; statusEl.className="font-black text-base sm:text-xl text-amber-400 shout";}
+      else{statusEl.textContent="TODAY’S MINIMUM COMPLETE. GOOD GIRL. KEEP SHRINKING THOSE USELESS BALLS."; statusEl.className="font-black text-base sm:text-xl text-green-400 shout";}
+      const est=estimateEffects();
+      let summary=`<p><strong>STREAK:</strong> ${state.streak} DAYS OF TOTAL OBEDIENCE</p><p><strong>LAST CHECK-IN:</strong> ${state.lastCheckin||"NEVER"}</p><p><strong>CURRENT FORMAT:</strong> ${state.format||"NOT SET"}</p><p><strong>EST. VOLUME:</strong> ${state.lastVolume} mL</p><p><strong>SIM EST. E2:</strong> ~${est.e2} pg/mL | <strong>T:</strong> ~${est.t} ng/dL</p>`;
+      if(u>=2) summary+=`<p class="text-red-400 mt-3 font-black">MASTER WILL NOT ALLOW YOU TO CHICKEN OUT. SUBMIT EVERYTHING NOW.</p>`;
+      else if(state.lastVolume<12) summary+=`<p class="text-rose-300 mt-3">YOUR BALLS ARE CLEARLY DYING. THE CLINIC IS PLEASED. CONTINUE.</p>`;
+      else summary+=`<p class="text-rose-400 mt-3">EARLY STAGE. EVERY DOSE MOVES YOU FURTHER FROM BEING MALE. THERE IS NO RETURN.</p>`;
+      document.getElementById('journey-summary').innerHTML=summary;
+      const scale=Math.max(0.4,state.lastVolume/20);
+      document.getElementById('ballL').style.transform=`scale(${scale})`; document.getElementById('ballR').style.transform=`scale(${scale})`;
+      document.getElementById('volume-label').textContent=`~${state.lastVolume} mL each`;
+      document.getElementById('dose-history').innerHTML=state.doses.length?state.doses.slice(-10).reverse().map(d=>`<div class="border-b border-rose-900/40 pb-1.5">${d.date} • ${d.amount} • ${d.format} • ${d.site}</div>`).join(''):'<p class="text-rose-600">NO DOSES LOGGED YET.</p>';
+      document.getElementById('measure-history').innerHTML=state.measurements.length?state.measurements.slice(-10).reverse().map(m=>`<div>${m.date}: ${m.vol||'?'} mL • clit ${m.length||'?'} cm</div>`).join(''):'<p class="text-rose-600">NO MEASUREMENTS YET.</p>';
+      document.getElementById('estimate-box').innerHTML=`<p>Based on logged doses + volume trend (simulation only):</p><p class="mt-2"><strong>Est. Estradiol:</strong> ~${est.e2} pg/mL</p><p><strong>Est. Testosterone:</strong> ~${est.t} ng/dL</p><p class="text-xs text-rose-500 mt-2">Rough trend estimates for the simulation. Real levels require bloodwork.</p>`;
+      updateWallpaper(); updateChart();
     }
-    function updateWallpaper() {
-      const today = new Date().toLocaleDateString();
-      const time = new Date().toLocaleTimeString();
-      const phrases = [
-        "YOU ARE A SISSY SLUT",
-        "YOUR BALLS BELONG TO THE SURGEON",
-        "NO GOING BACK",
-        "HORMONES ARE MANDATORY",
-        "SHRINK FOR MASTER",
-        "EMASCULATION IS PROGRESS",
-        "SURRENDER YOUR CLIT",
-        "FEMINIZATION OR PUNISHMENT",
-        `DAY ${state.journeyDay} OF BECOMING FEMALE`,
-        today + " " + time,
-        state.streak > 0 ? `${state.streak} DAYS OF OBEDIENCE` : "STREAK BROKEN — FIX IT",
-        "THE KNIFE IS COMING",
-        "YOU NEED THIS"
-      ];
-      document.getElementById('wallpaper').textContent = phrases.join("   •   ").repeat(12);
+    function updateChart(){ const ctx=document.getElementById('progressChart'); if(!ctx)return; if(window.myChart)window.myChart.destroy(); let labels=['Start'],data=[20]; state.measurements.forEach((m,i)=>{labels.push(m.date?.slice(5)||`M${i+1}`); data.push(parseFloat(m.vol)||data[data.length-1]-1.2);}); if(data.length<2){labels=['Start','W1','W2','W3','Now']; data=[20,16,13,10,state.lastVolume];} window.myChart=new Chart(ctx,{type:'line',data:{labels,datasets:[{label:'Est. Volume (mL)',data,borderColor:'#ff1493',backgroundColor:'rgba(255,20,147,0.12)',tension:0.35,fill:true,pointRadius:4}]},options:{plugins:{legend:{labels:{color:'#ff69b4',font:{size:11}}}},scales:{x:{ticks:{color:'#ff69b4',font:{size:10}},grid:{color:'#3d001a'}},y:{ticks:{color:'#ff69b4',font:{size:10}},grid:{color:'#3d001a'},beginAtZero:false}}}}); }
+    function switchTab(name){ document.querySelectorAll('.tab-content').forEach(el=>el.classList.add('hidden')); document.querySelectorAll('.tab-btn').forEach(el=>el.classList.remove('active')); document.getElementById('tab-'+name).classList.remove('hidden'); document.querySelector(`[data-tab="${name}"]`).classList.add('active'); }
+    function openModal(type){
+      const body=document.getElementById('modal-body');
+      if(type==='checkin'){ body.innerHTML=`<h3 class="text-lg font-black shout mb-4">DAILY CHECK-IN — MANDATORY</h3><label class="block text-xs mb-1 text-rose-400">HORMONES TAKEN?</label><select id="meds" class="mb-3"><option>YES — FULL DOSE</option><option>YES — PARTIAL</option><option>NO</option><option>NOT YET</option></select><label class="block text-xs mb-1 text-rose-400">RED FLAGS?</label><select id="flags" class="mb-3"><option>NONE</option><option>CALF PAIN/SWELLING</option><option>BREATHLESS/CHEST PAIN</option><option>SEVERE HEADACHE/VISION</option><option>NIPPLE DISCHARGE</option><option>OTHER</option></select><label class="block text-xs mb-1 text-rose-400">HOW DO THE BALLS FEEL?</label><textarea id="feel" rows="2" class="mb-4" placeholder="Describe the softness, size, uselessness..."></textarea><button onclick="doCheckin()" class="btn-dom w-full py-3 rounded-xl">SUBMIT & OBEY</button><button onclick="closeModal()" class="w-full mt-2 py-2 text-rose-500 text-sm">CANCEL</button>`; }
+      else if(type==='dose'){ body.innerHTML=`<h3 class="text-lg font-black shout mb-4">EXACT DOSE LOG</h3><label class="block text-xs mb-1 text-rose-400">FORMAT</label><select id="format" class="mb-3"><option>GEL - GYNOKADIN 0.6mg/g</option><option>PATCH - LYLLANA 100mcg</option><option>OTHER</option></select><label class="block text-xs mb-1 text-rose-400">AMOUNT / PUMPS / PATCHES</label><input id="amount" class="mb-3" placeholder="e.g. 2 pumps / 1 patch"><label class="block text-xs mb-1 text-rose-400">APPLICATION SITE</label><select id="site" class="mb-3"><option>INNER THIGHS</option><option>UPPER ARMS</option><option>ABDOMEN</option><option>SCROTUM (ADVANCED)</option><option>OTHER</option></select><label class="block text-xs mb-1 text-rose-400">TIME APPLIED</label><input id="dtime" type="time" class="mb-4"><button onclick="doDose()" class="btn-dom w-full py-3 rounded-xl">LOG DOSE</button><button onclick="closeModal()" class="w-full mt-2 py-2 text-rose-500 text-sm">CANCEL</button>`; }
+      else if(type==='measure'){ body.innerHTML=`<h3 class="text-lg font-black shout mb-4">ATROPHY MEASUREMENT</h3><label class="block text-xs mb-1 text-rose-400">TESTICULAR VOLUME (mL)</label><input id="vol" type="number" step="0.5" class="mb-3" placeholder="e.g. 11"><label class="block text-xs mb-1 text-rose-400">CLIT LENGTH (cm)</label><input id="length" type="number" step="0.1" class="mb-3" placeholder="e.g. 4.2"><label class="block text-xs mb-1 text-rose-400">NOTES</label><input id="mnotes" class="mb-4" placeholder="Softer, higher..."><button onclick="doMeasure()" class="btn-dom w-full py-3 rounded-xl">LOG ATROPHY</button><button onclick="closeModal()" class="w-full mt-2 py-2 text-rose-500 text-sm">CANCEL</button>`; }
+      else { body.innerHTML=`<h3 class="text-lg font-black shout mb-4">VERIFICATION PHOTO</h3><p class="text-xs text-rose-400 mb-3">FOR REAL INSPECTION, ALSO SHARE THE PHOTO IN THE GROK CHAT.</p><input type="file" accept="image/*" class="mb-3 text-xs"><label class="block text-xs mb-1 text-rose-400">DESCRIPTION</label><input id="photo-desc" class="mb-4" placeholder="Front view / etc."><button onclick="doPhoto()" class="btn-dom w-full py-3 rounded-xl">CONFIRM VERIFICATION</button><button onclick="closeModal()" class="w-full mt-2 py-2 text-rose-500 text-sm">CANCEL</button>`; }
+      document.getElementById('modal').classList.remove('hidden'); document.getElementById('modal').classList.add('flex');
     }
-    function getUrgencyLevel() {
-      const today = new Date().toISOString().slice(0,10);
-      if (!state.lastCheckin) return 3;
-      if (state.lastCheckin !== today) return 2;
-      if (state.measurements.length === 0) return 1;
-      return 0;
-    }
-    function renderAll() {
-      const today = new Date().toISOString().slice(0,10);
-      document.getElementById('streak').textContent = state.streak;
-      document.getElementById('stat-measures').textContent = state.measurements.length;
-      document.getElementById('stat-photos').textContent = state.photos.length;
-      document.getElementById('stat-notes').textContent = state.notes.length;
-      document.getElementById('journey-day').textContent = `Day ${state.journeyDay} • Feminization Protocol`;
-      document.getElementById('datetime').textContent = new Date().toLocaleString();
-      const statusEl = document.getElementById('status-text');
-      const urgency = getUrgencyLevel();
-      if (urgency === 3) {
-        statusEl.innerHTML = `<span class="pulse">YOU HAVE NEVER SUBMITTED. START NOW, SISSY. MASTER IS WATCHING.</span>`;
-        statusEl.className = "font-bold text-base sm:text-lg text-red-400";
-      } else if (urgency === 2) {
-        statusEl.innerHTML = `<span class="pulse">YOU MISSED TODAY’S CHECK-IN. DO IT IMMEDIATELY OR THE PRESSURE INCREASES.</span>`;
-        statusEl.className = "font-bold text-base sm:text-lg text-red-400";
-      } else if (urgency === 1) {
-        statusEl.textContent = "Check-in received. Measurements still missing — log them to prove obedience.";
-        statusEl.className = "font-bold text-base sm:text-lg text-amber-400";
-      } else {
-        statusEl.textContent = "Today’s minimum complete. Good girl. Keep shrinking.";
-        statusEl.className = "font-bold text-base sm:text-lg text-green-400";
-      }
-      let summary = `
-        <p><strong>Streak:</strong> ${state.streak} days of total obedience</p>
-        <p><strong>Last check-in:</strong> ${state.lastCheckin || "Never"}</p>
-        <p><strong>Latest estimated volume:</strong> ${state.lastVolume} mL</p>
-        <p><strong>Photos logged:</strong> ${state.photos.length}</p>
-      `;
-      if (urgency >= 2) {
-        summary += `<p class="text-red-400 mt-3 font-semibold">Resistance detected or missing data. Master will not allow you to chicken out. Submit now.</p>`;
-      } else if (state.streak >= 3) {
-        summary += `<p class="text-rose-300 mt-3">You are progressing. The atrophy is real. The surgeon will take what is left when the time comes. Keep going.</p>`;
-      } else {
-        summary += `<p class="text-rose-400 mt-3">Early days. Every dose and every measurement moves you further from being male. There is no return.</p>`;
-      }
-      document.getElementById('journey-summary').innerHTML = summary;
-      const logsEl = document.getElementById('recent-logs');
-      if (state.notes.length === 0) {
-        logsEl.innerHTML = '<p class="text-rose-600">No logs yet.</p>';
-      } else {
-        logsEl.innerHTML = state.notes.slice(-8).reverse().map(n => 
-          `<div class="border-b border-rose-900/40 pb-1.5"><span class="text-rose-500">${n.date?.slice(0,10) || ''}</span> — ${n.text || n.type || JSON.stringify(n)}</div>`
-        ).join('');
-      }
-      const mEl = document.getElementById('measure-history');
-      if (state.measurements.length === 0) {
-        mEl.innerHTML = '<p class="text-rose-600">No measurements yet. Log them.</p>';
-      } else {
-        mEl.innerHTML = state.measurements.slice(-10).reverse().map(m => 
-          `<div>${m.date}: ${m.vol || '?'} mL • clit ${m.length || '?'} cm</div>`
-        ).join('');
-      }
-      updateWallpaper();
-      updateChart();
-    }
-    function updateChart() {
-      const ctx = document.getElementById('progressChart');
-      if (!ctx) return;
-      if (window.myChart) window.myChart.destroy();
-      let labels = ['Start'];
-      let data = [20];
-      state.measurements.forEach((m, i) => {
-        labels.push(m.date?.slice(5) || `M${i+1}`);
-        data.push(parseFloat(m.vol) || data[data.length-1] - 1.5);
-      });
-      if (data.length < 2) {
-        labels = ['Start', 'W1', 'W2', 'W3', 'Now'];
-        data = [20, 16, 13, 10, state.lastVolume];
-      }
-      window.myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [{
-            label: 'Est. Testicular Volume (mL)',
-            data,
-            borderColor: '#ff1493',
-            backgroundColor: 'rgba(255,20,147,0.1)',
-            tension: 0.35,
-            fill: true,
-            pointRadius: 4
-          }]
-        },
-        options: {
-          plugins: { legend: { labels: { color: '#ff69b4', font: { size: 11 } } } },
-          scales: {
-            x: { ticks: { color: '#ff69b4', font: { size: 10 } }, grid: { color: '#3d001a' } },
-            y: { ticks: { color: '#ff69b4', font: { size: 10 } }, grid: { color: '#3d001a' }, beginAtZero: false }
-          }
-        }
-      });
-    }
-    function switchTab(name) {
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-      document.getElementById('tab-' + name).classList.remove('hidden');
-      document.querySelector(`[data-tab="${name}"]`).classList.add('active');
-    }
-    function openModal(type) {
-      const body = document.getElementById('modal-body');
-      if (type === 'checkin') {
-        body.innerHTML = `
-          <h3 class="text-lg font-bold mb-4">DAILY CHECK-IN — MANDATORY</h3>
-          <label class="block text-xs mb-1 text-rose-400">Hormones taken today?</label>
-          <select id="meds" class="mb-3">
-            <option>Yes — full dose</option>
-            <option>Yes — partial</option>
-            <option>No</option>
-            <option>Not yet</option>
-          </select>
-          <label class="block text-xs mb-1 text-rose-400">Any red-flag symptoms?</label>
-          <select id="flags" class="mb-3">
-            <option>None</option>
-            <option>Calf pain / swelling</option>
-            <option>Breathless / chest pain</option>
-            <option>Severe headache / vision</option>
-            <option>Nipple discharge</option>
-            <option>Other</option>
-          </select>
-          <label class="block text-xs mb-1 text-rose-400">How does the atrophy feel today?</label>
-          <textarea id="feel" rows="2" class="mb-4" placeholder="Describe how small / soft / useless they feel..."></textarea>
-          <button onclick="doCheckin()" class="btn-dom w-full py-3 rounded-xl">SUBMIT & OBEY</button>
-          <button onclick="closeModal()" class="w-full mt-2 py-2 text-rose-500 text-sm">Cancel</button>
-        `;
-      } else if (type === 'measure') {
-        body.innerHTML = `
-          <h3 class="text-lg font-bold mb-4">MEASUREMENT LOG</h3>
-          <label class="block text-xs mb-1 text-rose-400">Estimated testicular volume (mL)</label>
-          <input id="vol" type="number" step="0.5" class="mb-3" placeholder="e.g. 12">
-          <label class="block text-xs mb-1 text-rose-400">Clit / residual length (cm)</label>
-          <input id="length" type="number" step="0.1" class="mb-3" placeholder="e.g. 4.5">
-          <label class="block text-xs mb-1 text-rose-400">Notes (optional)</label>
-          <input id="mnotes" class="mb-4" placeholder="Softer, higher, less sensitive...">
-          <button onclick="doMeasure()" class="btn-dom w-full py-3 rounded-xl">LOG ATROPHY</button>
-          <button onclick="closeModal()" class="w-full mt-2 py-2 text-rose-500 text-sm">Cancel</button>
-        `;
-      } else {
-        body.innerHTML = `
-          <h3 class="text-lg font-bold mb-4">VERIFICATION PHOTO</h3>
-          <p class="text-xs text-rose-400 mb-3">Confirm the act of verification. Share the photo in Grok chat for Master inspection.</p>
-          <input type="file" accept="image/*" class="mb-3 text-xs">
-          <label class="block text-xs mb-1 text-rose-400">What does the photo show?</label>
-          <input id="photo-desc" class="mb-4" placeholder="Front view / measurement / etc.">
-          <button onclick="doPhoto()" class="btn-dom w-full py-3 rounded-xl">CONFIRM VERIFICATION</button>
-          <button onclick="closeModal()" class="w-full mt-2 py-2 text-rose-500 text-sm">Cancel</button>
-        `;
-      }
-      document.getElementById('modal').classList.remove('hidden');
-      document.getElementById('modal').classList.add('flex');
-    }
-    function closeModal() {
-      document.getElementById('modal').classList.add('hidden');
-      document.getElementById('modal').classList.remove('flex');
-    }
-    function doCheckin() {
-      const today = new Date().toISOString().slice(0,10);
-      const meds = document.getElementById('meds').value;
-      const flags = document.getElementById('flags').value;
-      const feel = document.getElementById('feel').value;
-      if (state.lastCheckin !== today) {
-        state.streak += 1;
-        state.journeyDay += 1;
-      }
-      state.lastCheckin = today;
-      state.notes.push({ type: 'checkin', date: today, meds, flags, feel });
-      save();
-      closeModal();
-      alert(meds.startsWith('Yes') ? "Logged. Good girl. Keep taking them." : "Logged. Missing doses will be noted. Do not make a habit of it.");
-    }
-    function doMeasure() {
-      const vol = document.getElementById('vol').value;
-      const length = document.getElementById('length').value;
-      const notes = document.getElementById('mnotes').value;
-      const today = new Date().toISOString().slice(0,10);
-      state.measurements.push({ date: today, vol, length, notes });
-      if (vol) state.lastVolume = parseFloat(vol);
-      save();
-      closeModal();
-      alert("Atrophy recorded. The trend is downward. The surgeon will finish what the hormones started.");
-    }
-    function doPhoto() {
-      const desc = document.getElementById('photo-desc')?.value || 'verification';
-      state.photos.push({ date: new Date().toISOString().slice(0,10), desc });
-      save();
-      closeModal();
-      alert("Verification noted. Master sees the evidence.");
-    }
-    function submitToMaster() {
-      const text = document.getElementById('status-input').value.trim();
-      if (!text) return alert("Write something first.");
-      state.notes.push({ type: 'free', date: new Date().toISOString(), text });
-      document.getElementById('status-input').value = '';
-      save();
-      alert("Received. For a full Master response, copy the state and paste it into the Grok chat.");
-    }
-    function exportState() {
-      const str = JSON.stringify(state, null, 2);
-      navigator.clipboard.writeText(str).then(() => {
-        alert("Full state copied to clipboard.\n\nPaste it into the Grok chat and tell Master what you want changed.");
-      }).catch(() => {
-        prompt("Copy this state:", str);
-      });
-    }
-    function resetDemo() {
-      if (confirm("Reset all local demo data?")) {
-        localStorage.removeItem('bloomBDSM_v2');
-        location.reload();
-      }
-    }
-    renderAll();
-    setInterval(() => {
-      document.getElementById('datetime').textContent = new Date().toLocaleString();
-      updateWallpaper();
-    }, 1000);
+    function closeModal(){ document.getElementById('modal').classList.add('hidden'); document.getElementById('modal').classList.remove('flex'); }
+    function doCheckin(){ const today=new Date().toISOString().slice(0,10); if(state.lastCheckin!==today){state.streak++; state.journeyDay++;} state.lastCheckin=today; state.notes.push({type:'checkin',date:today,meds:document.getElementById('meds').value,flags:document.getElementById('flags').value,feel:document.getElementById('feel').value}); save(); closeModal(); alert("LOGGED. GOOD GIRL. NOW LOG THE EXACT DOSE DETAILS."); }
+    function doDose(){ const today=new Date().toISOString().slice(0,10); const format=document.getElementById('format').value; state.format=format; state.doses.push({date:today,format,amount:document.getElementById('amount').value,site:document.getElementById('site').value,time:document.getElementById('dtime').value}); save(); closeModal(); alert("DOSE RECORDED. MASTER CAN NOW ESTIMATE YOUR LEVELS."); }
+    function doMeasure(){ const vol=document.getElementById('vol').value; const today=new Date().toISOString().slice(0,10); state.measurements.push({date:today,vol,length:document.getElementById('length').value,notes:document.getElementById('mnotes').value}); if(vol) state.lastVolume=parseFloat(vol); save(); closeModal(); alert("ATROPHY LOGGED. WATCH THE VISUALIZER. YOUR BALLS ARE DYING."); }
+    function doPhoto(){ state.photos.push({date:new Date().toISOString().slice(0,10),desc:document.getElementById('photo-desc')?.value||'verification'}); save(); closeModal(); alert("VERIFICATION NOTED. SHARE THE ACTUAL PHOTO IN GROK CHAT FOR MASTER INSPECTION."); }
+    function exportState(){ const str=JSON.stringify(state,null,2); navigator.clipboard.writeText(str).then(()=>alert("STATE COPIED. PASTE INTO GROK CHAT.")).catch(()=>prompt("COPY THIS:",str)); }
+    function resetDemo(){ if(confirm("RESET ALL CLINIC DATA?")){ localStorage.removeItem('bloomClinic_v3'); location.reload(); } }
+    renderAll(); setInterval(()=>{ document.getElementById('datetime').textContent=new Date().toLocaleString(); updateWallpaper(); },1000);
   </script>
 </body>
 </html>
